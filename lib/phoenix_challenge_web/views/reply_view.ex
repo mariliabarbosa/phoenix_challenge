@@ -14,7 +14,8 @@ defmodule PhoenixChallengeWeb.ReplyView do
     %{
       id: reply.id,
       content: reply.content,
-      author: reply.author
+      author: reply.author,
+      thread_id: reply.thread_id
     }
   end
 end

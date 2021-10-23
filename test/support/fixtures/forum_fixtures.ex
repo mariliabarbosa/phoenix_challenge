@@ -30,7 +30,7 @@ defmodule PhoenixChallenge.ForumFixtures do
         author: "some author",
         content: "some content"
       })
-      |> PhoenixChallenge.Forum.create_reply()
+      |> PhoenixChallenge.Forum.create_reply(1)
 
     reply
   end

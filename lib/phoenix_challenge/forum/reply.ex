@@ -6,7 +6,7 @@ defmodule PhoenixChallenge.Forum.Reply do
     field :author, :string
     field :content, :string
 
-    belongs_to :threads, PhoenixChallenge.Forum.Thread
+    belongs_to :threads, PhoenixChallenge.Forum.Thread, foreign_key: :thread_id
 
     timestamps()
   end
